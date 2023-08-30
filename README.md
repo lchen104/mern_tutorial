@@ -9,3 +9,6 @@ npm i -D nodemon
 
 
   npm i express-async-handler
+
+  # may need to install mongodb
+  npm install mongodb
