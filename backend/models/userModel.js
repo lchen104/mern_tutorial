@@ -14,10 +14,10 @@ const userSchema = mongoose.Schema(
             type: String,
             required: [true, 'Please add a Password']
         },
-        height: {
-            type: Number,
-            required: [true, 'Please add your height']
-        },
+        // height: {
+        //     type: Number,
+        //     required: [true, 'Please add your height']
+        // },
     },
     {
         timestamps: true

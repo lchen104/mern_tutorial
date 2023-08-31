@@ -12,3 +12,7 @@ npm i -D nodemon
 
   # may need to install mongodb
   npm install mongodb
+
+  npm i bcryptjs
+
+  npm i jsonwebtoken
