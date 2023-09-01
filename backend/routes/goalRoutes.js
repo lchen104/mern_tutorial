@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const { getGoals, setGoal, updateGoal, deleteGoal } = require('../controllers/goalController')
+const {protect} = require('../middleware/authMiddleware')
 
 // goal routes
 // router
@@ -36,13 +37,13 @@ const { getGoals, setGoal, updateGoal, deleteGoal } = require('../controllers/go
 
 router
     .route('/') // set route
-    .get(getGoals) // list goal
-    .post(setGoal) // create goal
+    .get(protect, getGoals) // list goal
+    .post(protect, setGoal) // create goal
 
 // update goal
 router
     .route('/:id') // set route
-    .put(updateGoal) // update goal
-    .delete(deleteGoal) // delete goal
+    .put(protect, updateGoal) // update goal
+    .delete(protect, deleteGoal) // delete goal
 
 module.exports = router 
