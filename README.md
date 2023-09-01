@@ -1,4 +1,13 @@
+# tutorial
+https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm
+
 # backend
+
+# tutorial
+https://www.youtube.com/watch?v=-0exw-9YJBo&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=1&t=758s
+
+# tutorial
+https://www.youtube.com/watch?v=enopDSs3DRw&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=4
 
 npm i express dotenv mongoose colors
 
@@ -20,9 +29,14 @@ npm i -D nodemon
 
   npm i jsonwebtoken
 
+  # to run backend server, goto dir backend
+  npm run server
   ----
 
   # frontend
+
+  https://www.youtube.com/watch?v=mvfsC66xqj0&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=3
+
 
   install Redux DevTools chrome extension
   https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
@@ -50,3 +64,21 @@ npm i -D nodemon
 
   npm i react-icons
 
+# to run frontend server, goto dir frontend
+npm run dev
+
+# install at root dir to run both front and backend automatically
+
+npm i -D concurrently
+
+# modify package.json in root to include "dev": concurrently line so u can run npm run dev to launch both front and backend server
+
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+
+  # frontend
+  npm i axios react-toastify
