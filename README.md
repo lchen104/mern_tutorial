@@ -67,9 +67,11 @@ npm i -D nodemon
 # to run frontend server, goto dir frontend
 npm run dev
 
-# install at root dir to run both front and backend automatically
-
+# install at root dir to run both front and backend automatically, goto root folder
 npm i -D concurrently
+
+# run in root, outside of frontend and backend folder
+npm run dev
 
 # modify package.json in root to include "dev": concurrently line so u can run npm run dev to launch both front and backend server
 
