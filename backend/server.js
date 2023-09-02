@@ -6,7 +6,7 @@ const { errorHandler } = require('./middleware/errorMiddleware')
 
 const connectDB = require('./config/db')
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5005;
 // const goalRoutes = require('./routes/goalRoutes')
 
 // call the connectDB function
