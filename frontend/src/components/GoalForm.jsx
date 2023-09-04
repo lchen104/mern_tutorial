@@ -20,7 +20,7 @@ const GoalForm = () => {
   return (
 
     <section className='form'>
-
+      
       <form onSubmit={onSubmit}>
 
         <div className='form-group'>

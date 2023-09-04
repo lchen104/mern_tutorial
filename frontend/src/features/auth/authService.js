@@ -3,7 +3,7 @@ import axios from 'axios';
 // making a call to our api/backend
 const API_URL = '/api/users/'
 
-// register user
+// register the user
 const register = async (userData) => {
 
     const response = await axios.post(API_URL, userData)
@@ -16,7 +16,7 @@ const register = async (userData) => {
 }
 
 
-// login user
+// login the user
 const login = async (userData) => {
 
     const response = await axios.post(API_URL + 'login', userData)
@@ -28,7 +28,7 @@ const login = async (userData) => {
     return response.data
 }
 
-// logout user
+// logout the user
 const logout = () => {
     localStorage.removeItem('user')
 }

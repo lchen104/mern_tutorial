@@ -4,7 +4,7 @@ import axios from 'axios'
 
 const API_URL = '/api/goals/'
 
-// Create new goal
+// Create a new goal
 const createGoal = async (goalData, token) => {
     
   const config = {
@@ -31,7 +31,7 @@ const getGoals = async (token) => {
   return response.data
 }
 
-// Delete user goal
+// Delete a user goal
 const deleteGoal = async (goalId, token) => {
   const config = {
     headers: {

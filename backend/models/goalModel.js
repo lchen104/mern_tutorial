@@ -1,3 +1,5 @@
+// model for goals
+
 const mongoose = require('mongoose')
 
 const goalSchema = mongoose.Schema(

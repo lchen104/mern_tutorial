@@ -1,6 +1,27 @@
 # tutorial
 https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm
 
+There is a bad bug in the video on 3rd video between 27min to 34min. The code will crash the website in an infinite loop. You will need to reboot the computer to get out of it. We need to change the user efffet to the following:
+
+    useEffect(() => {
+      if(!user){
+          navigate("/login")
+      }
+      else{
+          dispatch(getGoals())
+      }
+      
+      if(isError){
+         console.log("Error")
+      }
+      
+      return () => {
+         dispatch(reset())
+      }
+      }, [user, message, isError, dispatch, navigate])
+
+This was found by Garrett when you looked thru the comment section of the video.
+
 # backend
 
 # tutorial
