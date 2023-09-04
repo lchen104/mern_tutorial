@@ -84,3 +84,7 @@ npm run dev
 
   # frontend
   npm i axios react-toastify
+
+  https://devcenter.heroku.com/articles/heroku-cli
+  # imstall heroku cli in root dir for macOs
+  brew tap heroku/brew && brew install heroku
